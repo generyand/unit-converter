@@ -88,6 +88,7 @@ li {
   -moz-box-shadow: 1px 4px 12px -3px rgba(125, 125, 125, 0.66);
   width: 588px;
   background: #f8f8f8;
+  margin-bottom: 12px;
 }
 
 header {
