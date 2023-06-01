@@ -89,6 +89,7 @@ li {
   width: 588px;
   background: #f8f8f8;
   margin-bottom: 12px;
+  outline: 1px solid red;
 }
 
 header {
