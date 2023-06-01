@@ -213,7 +213,6 @@ button:active {
     width: 22rem;
     box-shadow: none;
     outline: 1px solid hsl(220, 57%, 80%);
-    outline: 1px solid red;
   }
 
   main {
