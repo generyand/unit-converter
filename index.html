@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="unit-converter">
+      <header>
+        <h1>Unit Converter</h1>
+        <select name="type" id="type">
+          <option id="length" value="length">Length</option>
+          <option id="mass" value="mass">Mass</option>
+          <option id="time" value="time">Time</option>
+        </select>
+      </header>
+
+      <main>
+        <div class="form-group">
+          <input type="number" id="inputValue" placeholder="Enter Value"/>
+        </div>
+
+        <div class="units">
+          <div class="form-group">
+            <label for="fromUnit">From:</label>
+            <select name="fromUnit" class="unit" id="fromUnit">
+              <option value="mm">Millimeter</option>
+              <option value="cm">Centimeter</option>
+              <option value="in">Inch</option>
+              <option value="ft">Foot</option>
+              <option value="m">Meter</option>
+              <option value="km">Kilometer</option>
+              <option value="mi">Mile</option>
+              <option value="lbs">Pound</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="toUnit">To:</label>
+            <select name="toUnit" class="unit" id="toUnit">
+              <option value="mm">Millimeter</option>
+              <option value="cm">Centimeter</option>
+              <option value="in">Inch</option>
+              <option value="ft">Foot</option>
+              <option value="m">Meter</option>
+              <option value="km">Kilometer</option>
+              <option value="mi">Mile</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="convert">Convert</button>
+
+        <div class="result" id="result">_</div>
+      </main>
+    </div>
+  </body>
+</html>
